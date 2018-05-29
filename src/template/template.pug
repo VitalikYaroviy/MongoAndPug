@@ -1,0 +1,30 @@
+.main
+    .list
+        - for (var i = 0; i < data.length; i++)
+            form
+                p Full name
+                input(type="text" readonly)(value=data[i]["fullName"])
+                p Birth date
+                input(type="text" readonly)(value=data[i]["birthDate"])
+                p Phone number
+                input(type="text" readonly)(value=data[i]["phoneNumber"])
+                p Interview
+                textarea(readonly)=data[i]["interviewNotes"]
+                button#btnEdit(class="butEdit")
+                button#btnDelete(class="butDelete")
+                button#btnSave(class="butSave")
+                button#btnClose(class="butClose")
+
+
+
+    .div
+        form
+            p Full name
+            input(type="text", placeholder="Input full name")
+            p Birth date
+            input(type="date", placeholder="Select date")
+            p Phone number
+            input(type="text", placeholder="Input phone number")
+            p Interview
+            textarea(placeholder="Input interview text")
+            button#btn(class="butAdd")

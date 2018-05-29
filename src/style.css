@@ -1,0 +1,80 @@
+body {
+    font-size: medium;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+form{
+    width: 400px;
+    text-align: center;
+    border: solid black 2px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+input[type=text] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid gray;
+}
+
+textarea {
+    width: 90%;
+    height: 100px;
+    border: none;
+    border-bottom: solid 1px gray;
+}
+
+p{
+    margin: 15px auto;
+    font-weight: bold;
+}
+
+.list{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    margin: 10px auto;
+}
+
+button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    margin: 10px;
+}
+
+.butAdd{
+background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Plus_sign_font_awesome.svg/512px-Plus_sign_font_awesome.svg.png") no-repeat top;
+background-size: cover;
+}
+
+.butEdit{
+    background: url('http://ru.seaicons.com/wp-content/uploads/2015/11/Editing-Edit-icon.png') no-repeat top;
+    background-size: cover
+}
+
+.butDelete{
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Noun_project_-_supprimer_round.svg/100px-Noun_project_-_supprimer_round.svg.png') no-repeat top;
+    background-size: cover
+}
+
+.butSave{
+    background: url('https://api.icons8.com/download/93f41c6090507796f08d317c5b0be7891c885e0b/Android_L/PNG/512/Very_Basic/ok-512.png') no-repeat top;
+    background-size: cover;
+    display: none;
+}
+
+.butClose{
+    background: url('https://www.2spi.com/thumb.php?file=catalog/items/gs2x05_s.gif&sizex=275&sizey=275') no-repeat top;
+    background-size: cover;
+    display: none;
+}
